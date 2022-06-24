@@ -1,3 +1,4 @@
+#!usr/bin/env julia
 using Plots
 #plotlyjs() # too heavy for my env
 gr()

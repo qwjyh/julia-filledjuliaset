@@ -13,7 +13,7 @@ image::plots/filledjuliaset_c_-0.1 + 0.75im.png[]
 == note
 [source, julia]
 ----
-include::./plotfilledjuliaset.jl[lines=28]
+juliaset = transpose(reduce(hcat, filter(isInjuliaset, Array.(eachrow(xys)))))
 ----
 `transpose(reduce(hcat, l))` does `l::Vector{Vector{Any}} -> Matrix{Any}`.
 
